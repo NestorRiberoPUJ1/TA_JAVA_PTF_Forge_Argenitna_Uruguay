@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainContent {
+    background-color: darkblue;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.headerRed {
+    background-color: red;
+    color: rgb(4, 98, 156);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgba(220, 220, 220, 0.391);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right:10px ;
+}
