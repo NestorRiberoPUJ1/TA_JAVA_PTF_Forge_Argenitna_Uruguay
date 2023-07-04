@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNav">
+            <h1>App de Repaso</h1>
+        </div>
+        <div class="row">
+            <div class="sideNav">
+                <h3>Temas a repasar</h3>
+                <ul>
+                    <li>HTML <input type="checkbox" onchange="clicked(this)" ></li>
+                    <li>CSS <input type="checkbox" onchange="clicked(this)" ></li>
+                    <li>JS <input type="checkbox" onchange="clicked(this)" ></li>
+                </ul>
+                <h4>Temas Pendientes: <span id="pendientes">3</span> </h4>
+            </div>
+            <div class="mainContent"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
