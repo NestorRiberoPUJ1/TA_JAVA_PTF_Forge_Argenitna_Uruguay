@@ -1,7 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
         <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
             <!DOCTYPE html>
             <html lang="en">
 
@@ -12,14 +11,7 @@
             </head>
 
             <body>
-                <h1>
-                    Bienvenido
-                    <c:out value="${user.username}" />
-                </h1>
-                <h5>Miembro desde:
-                    <c:out value="${user.created_at}" />
-                </h5>
-
+                <h1>El usuario que busca no se encuentra registrado</h1>
                 <a href="/user">
                     <button>Volver</button>
                 </a>

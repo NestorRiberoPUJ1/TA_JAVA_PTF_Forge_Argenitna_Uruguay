@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -46,5 +47,17 @@ public class UserController {
       userService.crearUser(user);
       return "redirect:/user";
     }
+  }
+
+  @GetMapping("/{id}")
+  public String detailUser(Model model, @PathVariable("id") Long id) {
+    User current_user = userService.buscarUser(id);
+
+    if (current_user == null) {
+      return "notFound.jsp";
+    }
+    model.addAttribute("user", current_user);
+
+    return "user.jsp";
   }
 }
